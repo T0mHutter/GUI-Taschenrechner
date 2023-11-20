@@ -62,6 +62,8 @@ public class TaschenRechner {
             public void actionPerformed(ActionEvent e){
                 String b = "";
                 Ergebnis.setText(b);
+                textField1.setText(b);
+                textField2.setText(b);
             }
         });
         berechnenButton.addActionListener(new ActionListener() {
@@ -69,6 +71,7 @@ public class TaschenRechner {
             public void actionPerformed(ActionEvent e) {
                 String val = String.valueOf(erg);
                 Ergebnis.setText(val);
+
             }
         });
     }
