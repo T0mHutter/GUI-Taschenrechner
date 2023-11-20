@@ -16,12 +16,15 @@ public class TaschenRechner {
     private JLabel Zahl1;
     private JLabel Zahl2;
     Float erg;
+
+    Float num1;
+    Float num2;
     public TaschenRechner(){
         AddButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Float num1 = Float.valueOf(textField1.getText());
-                Float num2 = Float.valueOf(textField2.getText());
+                num1 = Float.valueOf(textField1.getText());
+                num2 = Float.valueOf(textField2.getText());
 
                 erg = num1 + num2;
             }
@@ -29,8 +32,8 @@ public class TaschenRechner {
         SubButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Float num1 = Float.valueOf(textField1.getText());
-                Float num2 = Float.valueOf(textField2.getText());
+                num1 = Float.valueOf(textField1.getText());
+                num2 = Float.valueOf(textField2.getText());
 
                 erg = num1 - num2;
             }
@@ -38,8 +41,8 @@ public class TaschenRechner {
         MulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Float num1 = Float.valueOf(textField1.getText());
-                Float num2 = Float.valueOf(textField2.getText());
+                num1 = Float.valueOf(textField1.getText());
+                num2 = Float.valueOf(textField2.getText());
 
                 erg = num1 * num2;
             }
@@ -47,8 +50,8 @@ public class TaschenRechner {
         DivButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Float num1 = Float.valueOf(textField1.getText());
-                Float num2 = Float.valueOf(textField2.getText());
+                num1 = Float.valueOf(textField1.getText());
+                num2 = Float.valueOf(textField2.getText());
 
                 erg = num1 / num2;
             }
